@@ -1,23 +1,4 @@
-/*  -------------------------------------------------------------------------  */
-/*                                                                             */
-/*               Data matching for corporate governance research               */
-/*                                                                             */
-/*  Program      : CCM_Link_Tables_create.sas                                  */
-/*  Author       : Attila Balogh, School of Banking and Finance                */
-/*                 UNSW Business School, UNSW Sydney                           */
-/*  Date Created :  1 Nov 2017                                                 */
-/*  Last Modified:  7 Nov 2017                                                 */
-/*                                                                             */
-/*  Description  : BX Link Exaple tables                                       */
-/*                                                                             */
-/*  Notes        : Please reference the following paper when using this code   */
-/*                 Balogh, A 2017                                              */
-/*                 Data matching for corporate governance research             */
-/*                 Available at SSRN: https://ssrn.com/abstract=3053405        */
-/*                                                                             */
-/*  _________________________________________________________________________  */
 
-/*  Petrohawk multiple BoardIDs*/
 
 %let keep = BoardID Company_Name CIKCode COMP_Cusip OrgType;
 data x_1720679_1;
@@ -314,6 +295,4 @@ proc copy in=work out=BX_Link;
       select x_: ;
 run;
 
-/*  -------------------------------------------------------------------------  */
-/* *************************  Attila Balogh, 2017  *************************** */
-/*  -------------------------------------------------------------------------  */
+
